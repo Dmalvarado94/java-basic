@@ -14,8 +14,12 @@ public class Funciones1 {
 		metodo2("Perez");
 		metodo3(380);
 		metodo4(12, 3.14f);
-		String[] vocales = {"a","e","i","o","u"};  // Necesario indicar antes de llamarlo para poder imprimirlo.
-		metodo5(vocales);
+		String[] metodo5 = {"a","e","i","o","u"};  // Necesario indicar antes de llamarlo para poder imprimirlo.
+		metodo5(metodo5);
+		// metodos con llamados o return
+		System.out.println(retorno1());
+		Integer valorRetornado = retorno1();
+		System.out.println(valorRetornado/7);
 
 	}
 	// Definicion o estructura de un método
@@ -40,6 +44,16 @@ public class Funciones1 {
 	
 	public static void metodo5(String[] arreglito) {
 		System.out.println("Soy el arreglo  " + Arrays.toString(arreglito));
+		
+	}
+	
+	// Funciones con retorno  
+	// cambiamos void por el tipo de dato que quieres retornar
+	// retornar es =  resultado
+	
+	public static int retorno1() {
+		Integer totalAlumnos = 35;
+		return totalAlumnos;
 		
 	}
 
