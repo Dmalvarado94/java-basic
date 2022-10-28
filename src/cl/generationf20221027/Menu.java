@@ -46,7 +46,6 @@ public class Menu {
 				break;
 			}
 			
-			
 			if(contadorErrores==1) {
 				System.out.println("Agoto la cantidad de intentos, chaolin!!");
 				break;
